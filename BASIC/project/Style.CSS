@@ -1,0 +1,58 @@
+body{
+    font-family: Arial;
+    margin: 10px;
+    background-color: rgb(154, 177, 180);
+}
+/* nav bar */
+nav{
+    background-color: rgb(28, 29, 29);
+    padding: 10px;
+    text-align: center;
+}
+nav a{
+    color: white;
+    margin: 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+/*header */
+header{
+    background-color:rgb(14, 209, 216);
+    color:rgb(32, 34, 36);
+    text-align: center;
+    padding: 18px;
+}
+/* section */
+.container{
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+}
+.card{
+    background-color: aliceblue;
+    border: 2px solid black;
+    padding: 20px;
+    width: 25% ;
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 20px;
+    gap: 20px;
+    padding: 10px;
+    border: 2px solid black;
+}
+.grid div{
+    background-color: rgb(225, 236, 236);
+    padding: 20px;
+    text-align: center;
+    
+}
+/*footer */
+footer{
+    background-color: rgb(25, 25, 26);
+    color:rgb(233, 239, 239);
+    text-align: center;
+    padding: 10px;
+}

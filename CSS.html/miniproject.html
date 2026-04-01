@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+
+<style>
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Navigation */
+nav{
+background:#c6afaf;
+color:rgb(188, 19, 19);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:#00c3ff;
+}
+
+/* Header */
+header{
+height:90vh;
+background:linear-gradient(to right,#4facfe,#00f2fe);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:rgb(162, 154, 154);
+}
+
+header h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:20px;
+}
+
+/* Sections */
+section{
+padding:60px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+/* About */
+.about{
+text-align:center;
+line-height:1.6;
+}
+
+/* Services */
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#f4f4f4;
+padding:20px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+background:#e0f7ff;
+}
+
+/* Contact */
+.contact form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+}
+
+.contact input,
+.contact textarea{
+margin:10px 0;
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.contact button{
+padding:10px;
+background:#333;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.contact button:hover{
+background:#00a6ff;
+}
+
+/* Footer */
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+flex-direction:column;
+align-items:center;
+}
+
+nav ul li{
+margin:10px 0;
+}
+
+header h1{
+font-size:32px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+<h2>MySite</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Header -->
+<header id="home">
+<h1>Welcome to My Website</h1>
+<p>A simple responsive website using HTML, CSS and JavaScript</p>
+</header>
+
+<!-- About Section -->
+<section id="about">
+<h2>About</h2>
+<p class="about">
+This is a sample responsive website created using HTML5, CSS, and JavaScript.
+You can use this template for college projects, personal portfolios,
+or small business websites. It adjusts automatically for mobile and desktop screens.
+</p>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+<h2>Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Web Design</h3>
+<p>Creating modern and responsive website designs.</p>
+</div>
+
+<div class="card">
+<h3>Development</h3>
+<p>Building websites using HTML, CSS, and JavaScript.</p>
+</div>
+
+<div class="card">
+<h3>SEO</h3>
+<p>Improving website visibility in search engines.</p>
+</div>
+
+<div class="card">
+<h3>Support</h3>
+<p>Providing maintenance and technical support.</p>
+</div>
+
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+<h2>Contact</h2>
+
+<form onsubmit="showMessage(event)">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+</section>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 My Website | All Rights Reserved</p>
+</footer>
+
+<script>
+function showMessage(event){
+event.preventDefault();
+alert("Thank you! Your message has been sent.");
+}
+</script>
+
+</body>
+</html>
